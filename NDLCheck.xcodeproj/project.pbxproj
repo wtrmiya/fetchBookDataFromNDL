@@ -11,6 +11,7 @@
 		86C76D912BA2A60D0006F08E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C76D902BA2A60D0006F08E /* ContentView.swift */; };
 		86C76D932BA2A60E0006F08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C76D922BA2A60E0006F08E /* Assets.xcassets */; };
 		86C76D962BA2A60E0006F08E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C76D952BA2A60E0006F08E /* Preview Assets.xcassets */; };
+		86C76D9E2BA2D1E90006F08E /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 86C76D9D2BA2D1E90006F08E /* SWXMLHash */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C76D9E2BA2D1E90006F08E /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NDLCheck;
+			packageProductDependencies = (
+				86C76D9D2BA2D1E90006F08E /* SWXMLHash */,
+			);
 			productName = NDLCheck;
 			productReference = 86C76D8B2BA2A60D0006F08E /* NDLCheck.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 86C76D822BA2A60D0006F08E;
+			packageReferences = (
+				86C76D9C2BA2D1E90006F08E /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
 			productRefGroup = 86C76D8C2BA2A60D0006F08E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86C76D9C2BA2D1E90006F08E /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86C76D9D2BA2D1E90006F08E /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86C76D9C2BA2D1E90006F08E /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86C76D832BA2A60D0006F08E /* Project object */;
 }
